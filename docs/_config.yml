@@ -1,40 +1,6 @@
-# ==================== 核心基础配置（必改）====================
-# 站点标题（浏览器标签/页面中显示）
-title: 我的个人知识库
-# 站点描述（SEO/页面说明）
-description: 记录编程、工具使用、学习笔记的个人知识库
-# 作者名
-author: 你的名字
-# 站点语言（简体中文）
-language: zh-Hans
-# 时区（影响日期显示）
-timezone: Asia/Shanghai
-
-# ==================== GitHub Pages 路径配置（关键！）====================
-# 规则：
-# 1. 用户名仓库（xxx.github.io）：url = "https://xxx.github.io"，baseurl = ""
-# 2. 普通仓库（如 my-knowledge）：url = "https://xxx.github.io"，baseurl = "/仓库名"
-url: "https://aikesi128.github.io"
-baseurl: "/md"  # 普通仓库必填，用户名仓库填 ""（空字符串）
-
-# ==================== Jekyll 核心规则 ====================
-# 排除无需渲染的文件/文件夹（避免Jekyll处理源码/依赖）
-exclude:
-  - node_modules/
-  - .gitignore
-  - package.json
-  - README.md  # 若想让仓库README作为站点首页，可删除这行
-
-# 强制包含Jekyll默认忽略的文件（如需禁用Jekyll可加 .nojekyll，否则无需改）
-include:
-  - .htaccess
-
-# 文档默认布局（Jekyll会套用 _layouts/default.html，若无则用内置默认布局）
-defaults:
-  - scope:
-      path: ""  # 匹配所有MD文件
-      type: "pages"
-    values:
-      layout: "default"  # 确保 _layouts 文件夹有 default.html，无则注释此行
-
-# 启用GitHub Pages支持的官方插件（无需本地安装
+theme: jekyll-theme-minimal # For supported themes
+remote_theme: THEME-NAME # For other Jekyll themes hosted on GitHub
+title: Your Site Title
+description: A brief description of your site.
+url: "https://aikesi128.github.io" # Your site's base URL
+baseurl: "/md" # If your site is in a subfolder of your username.github.io
